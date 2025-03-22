@@ -69,7 +69,7 @@
                 android:layout_marginTop="16dp"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/loginButton"
+                android:id="@+id/ResetPassword"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_marginTop="64dp"
                 android:layout_marginStart="32dp"

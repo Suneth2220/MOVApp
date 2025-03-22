@@ -20,9 +20,9 @@ class SplashActivity : AppCompatActivity() {
             insets
         }
 
-        var nextbtn = findViewById<Button>(R.id.getstartbutton)
-        nextbtn.setOnClickListener {
-            var intent = Intent(this,Navigation::class.java)
+        val getstartbutton = findViewById<Button>(R.id.getstartbutton)
+        getstartbutton.setOnClickListener{
+            intent = Intent(this,LoginActivity::class.java)
             startActivity(intent)
         }
     }
