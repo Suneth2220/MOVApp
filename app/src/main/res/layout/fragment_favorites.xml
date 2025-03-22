@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context=".Favorites">
+
+    <!-- ScrollView for Vertical Layout -->
+    <ScrollView
+        android:id="@+id/scrollViewFavorites"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Title Section: Favorites -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <!-- Back Arrow Button -->
+                <ImageButton
+                    android:id="@+id/backArrow"
+                    android:layout_width="60dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="16dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Back"
+                    android:src="@drawable/back" />
+
+                <!-- Favorites Title -->
+                <TextView
+                    android:id="@+id/favoritesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="My Favorites"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <!-- Favorite Movies Section -->
+            <!-- Movie 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/moviePoster1"
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/poster1" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/movieTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jurasic Park"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:gravity="start" />
+
+                    <!-- Buttons Horizontal Layout -->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="start">
+
+                        <!-- Add to Favorites Button -->
+                        <Button
+                            android:id="@+id/addToFavoritesButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Added"
+                            android:background="@drawable/orange_button_background"
+                            android:textColor="@color/white"
+                            android:layout_marginEnd="8dp" />
+
+                        <!-- Buy Button -->
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/buyButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Watch"
+                            android:background="@drawable/orange_button_background"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Movie 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/moviePoster2"
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/poster2" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/movieTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Good Fellas"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:gravity="start" />
+
+                    <!-- Buttons Horizontal Layout -->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="start">
+
+                        <!-- Add to Favorites Button -->
+                        <Button
+                            android:id="@+id/addToFavoritesButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Added"
+                            android:background="@drawable/orange_button_background"
+                            android:textColor="@color/white"
+                            android:layout_marginEnd="8dp" />
+
+                        <!-- Buy Button -->
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/buyButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Watch"
+                            android:background="@drawable/orange_button_background"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Movie 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/moviePoster3"
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/poster3" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/movieTitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Batman"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:gravity="start" />
+
+                    <!-- Buttons Horizontal Layout -->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="start">
+
+                        <!-- Add to Favorites Button -->
+                        <Button
+                            android:id="@+id/addToFavoritesButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Added"
+                            android:background="@drawable/orange_button_background"
+                            android:textColor="@color/white"
+                            android:layout_marginEnd="8dp" />
+
+                        <!-- Buy Button -->
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/buyButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Watch"
+                            android:background="@drawable/orange_button_background"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
